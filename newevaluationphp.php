@@ -59,7 +59,7 @@
 	      $insert=array(
 		'_id'=>$num_evalid,
 		'Employee ID'=>$num_eid,
-		'Score'=>$num_score,
+		'Score'=>$num_score;
 	      );
 	      $collection->insertOne($insert);
 	    }
