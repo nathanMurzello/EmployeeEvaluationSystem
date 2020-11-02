@@ -31,11 +31,11 @@
 	$value4 = $_POST['value4'];
 	$value5 = $_POST['value5'];
 	
-	if (is_numeric($emp_id) {
+	if (is_numeric($emp_id)) {
       		$approved++;
    	}
 	    else {
-	      echo "Error: A employee id can only contain numbers.<br>";
+	      echo "\nError: A employee id can only contain numbers.<br>";
 	    }
     
 	    if (is_numeric($eval_id)) {
@@ -52,20 +52,22 @@
     //print "<div>Evaluation results are:  $score </div>";
 	//echo  "$emp_id, Evaluation raw score results are:, $score","%";
 	if ($approved == 2) {
-      
-	      $num_eid=(int)$_POST['emp_id'];
-		$num_evalid=(int)$_POST['eval_id'];
-		$num_score=(double)$score;
-	      $insert=array(
-		'_id'=>$num_evalid,
-		'Employee ID'=>$num_eid,
-		'Score'=>$num_score
-	      );
-	      $collection->insertOne($insert);
-	    }
-	    else {
-	      echo "Operation unsuccessful: Evaluation was not added, please try again.";
-	    }
+      echo "Evaluation successfully added.";
+      $num_emp_id=(int)$_POST['emp_id'];
+      $num_eval_id=(int)$_POST['eval_id'];
+      $num_score=(double)$score;
+      $insert=array(
+          '_id'=>$num_eval_id,
+          'employee id'=>$num_emp_id,
+          'eval_score'=>$num_score
+      );
+
+      $collection->insertOne($insert);
+    }
+    else {
+      echo "Operation unsuccessful: Evaluation was not added, please try again.";
+	  echo "Evaluation results are:, $score";
+    }
 
 echo "New evaluation added successfully";
 echo "Evaluation results are:, $score";
