@@ -55,11 +55,11 @@
       
 	      $num_eid=(int)$_POST['emp_id'];
 		$num_evalid=(int)$_POST['eval_id'];
-		$num_score=(int)$score;
+		$num_score=(double)$score;
 	      $insert=array(
 		'_id'=>$num_evalid,
 		'Employee ID'=>$num_eid,
-		'Score'=>$num_score;
+		'Score'=>$num_score
 	      );
 	      $collection->insertOne($insert);
 	    }
