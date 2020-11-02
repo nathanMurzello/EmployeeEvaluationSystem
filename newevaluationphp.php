@@ -79,9 +79,6 @@ echo "Evaluation results are:, $score";
       The Techonauts: Bonnie Atelsek - Matthew Kabat - Nathan Murzello - Terrence Gaines
     </div>
     
-    <?php
-     
-    ?>
   </body>
 
 </html>
