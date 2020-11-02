@@ -51,7 +51,7 @@
     $score = (($value1*$weight1) + ($value2*$weight2) + ($value3*$weight3) + ($value4*$weight4) + ($value5*$weight5));
     //print "<div>Evaluation results are:  $score </div>";
 	//echo  "$emp_id, Evaluation raw score results are:, $score","%";
-	if ($approved == 3) {
+	if ($approved == 2) {
       
 	      $num_eid=(int)$_POST['emp_id'];
 		$num_evalid=(int)$_POST['eval_id'];
