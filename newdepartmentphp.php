@@ -10,9 +10,7 @@
     <!--Script to establish a connection with the database and insert user info.-->
     <?php
 
-    require 'vendor/autoload.php';  //The library that allows php to work with Mongo
-
-    //creates a connection to the database and naviagtes to the specific "collection" we are adding data to.
+    require 'vendor/autoload.php';
     $client = new MongoDB\Client(
       'mongodb+srv://techno:techno123@cluster0.k9zfj.mongodb.net/EmployeeSystem?retryWrites=true&w=majority');
     $collection=$client->selectCollection('EmployeeSystem','Department');
