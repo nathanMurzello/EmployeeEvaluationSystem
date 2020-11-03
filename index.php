@@ -13,7 +13,7 @@
         <div id= stock> </div>
         
         <div class = content>
-            <a href= "./pageunderconstruction.html">
+            <a href= "./search.php">
             <div class= menu id= top_left>
                 Search Employee
             </div>
@@ -37,11 +37,11 @@
             </div>
             </a>
 			
-			<a href= "./pageunderconstruction.html">
+			<!--<a href= "./pageunderconstruction.html">
             <div class= menu id= bottom_right>
                 View Employee Bonus
             </div>
-            </a>
+            </a>-->
         </div>
         
         <div id= copyright>
