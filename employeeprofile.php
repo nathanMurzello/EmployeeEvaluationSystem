@@ -11,23 +11,23 @@
           'mongodb+srv://techno:techno123@cluster0.k9zfj.mongodb.net/EmployeeSystem?retryWrites=true&w=majority');
         $collection=$client->selectCollection('EmployeeSystem','Employee');
     
-        $ID = $_POST['ID'];
+        $ID = (int)$_POST['ID'];
+        $employee=$collection->findOne(['_id'=>$ID]);
         
-        
-        //find the employee based on their ID
+        /*find the employee based on their ID
         $criteria = array('_id' => $ID);
         $cursor = $collection->findOne($criteria);
-        
+        */
         //if the employee does not exist, redirect to the error page
-        if(!empty($cursor)) {
+        if(!empty($employee)) {
             header("Location: ./employeeDoesNotExist.html"); 
             exit;
         }
         
         echo("Success!");
-        foreach($cursor as $document) {  
-            var_dump($document);  
-        }
+        
+        var_dump($employee);  
+        
         
     ?>
     <h1 class=banner> Employee Profile</h1>
