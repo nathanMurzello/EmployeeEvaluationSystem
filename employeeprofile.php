@@ -11,9 +11,9 @@
           'mongodb+srv://techno:techno123@cluster0.k9zfj.mongodb.net/EmployeeSystem?retryWrites=true&w=majority');
         $collection=$client->selectCollection('EmployeeSystem','Employee');
     
-        $ID = (int)$_POST['ID'];
+        $ID = $_POST['ID'];
         
-        $employee=$collection->findOne(['_id'=>new MongoDB\BSON\ObjectId("$ID")]);
+        $employee=$collection->findOne(['_id'=>new MongoDB\BSON\ObjectId($ID)]);
         var_dump($employee); 
         /*find the employee based on their ID
         $criteria = array('_id' => $ID);
