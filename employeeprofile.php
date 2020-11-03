@@ -14,7 +14,7 @@
         $ID = (int)$_POST['ID'];
         $num_Id=12345;
         echo($ID);
-        $employee=$collection->findOne(['_id'=>$num_Id]);
+        $employee=$collection->findOne(['first_name '=>'John ']);
         var_dump($employee); 
         /*find the employee based on their ID
         $criteria = array('_id' => $ID);
