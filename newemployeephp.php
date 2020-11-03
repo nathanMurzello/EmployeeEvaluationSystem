@@ -78,6 +78,8 @@
           '_id'=>$num_id,
           'first_name'=>$_POST['first_name'],
           'last_name'=>$_POST['last_name'],
+          'address'=$_POST['address'],
+          'city'=$_POST['city'],
           'state'=>$_POST['state'],
           'zip_code'=>$num_zip,
           'department'=>$num_dep,
