@@ -12,7 +12,8 @@
         $collection=$client->selectCollection('EmployeeSystem','Employee');
     
         $ID = (int)$_POST['ID'];
-        $employee=$collection->findOne(['_id'=>'12345']);
+        echo($ID);
+        $employee=$collection->findOne(['_id'=>$ID]);
         var_dump($employee); 
         /*find the employee based on their ID
         $criteria = array('_id' => $ID);
