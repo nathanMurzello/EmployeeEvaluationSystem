@@ -12,9 +12,8 @@
         $collection=$client->selectCollection('EmployeeSystem','Employee');
     
         $ID = (int)$_POST['ID'];
-        $num_Id=12345;
-        echo($ID);
-        $employee=$collection->findOne(['first_name '=>'John ']);
+        
+        $employee=$collection->findOne(['_id'=>new MongoDB\BSON\ObjectId("$ID")]);
         var_dump($employee); 
         /*find the employee based on their ID
         $criteria = array('_id' => $ID);
