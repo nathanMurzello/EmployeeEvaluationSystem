@@ -43,18 +43,7 @@
             </div>
             </a>
 			
-			<a href= "./pageunderconstruction.html">
-            <div class= menu id= bottom_right>
-                Manage Employee
-            </div>
-            </a>
 			
-			
-			<a href= "./pageunderconstruction.html">
-            <div class= menu id= bottom_right>
-                Manage Department
-            </div>
-            </a>
 			
 			
 			
