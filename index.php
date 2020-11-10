@@ -39,7 +39,7 @@
 			
 			<a href= "./pageunderconstruction.html">
             <div class= menu id= bottom_right>
-                View Employee Bonus
+                Manage Employee
             </div>
             </a>
 			
@@ -50,29 +50,12 @@
             </a>
 			<a href= "./pageunderconstruction.html">
             <div class= menu id= bottom_right>
-                Edit Employee Profile
+                Manage Department
             </div>
             </a>
-			<a href= "./pageunderconstruction.html">
-            <div class= menu id= bottom_right>
-                Delete Employee Profile
-            </div>
-            </a>
-			<a href= "./pageunderconstruction.html">
-            <div class= menu id= bottom_right>
-                Edit Department Profile
-            </div>
-            </a>
-			<a href= "./pageunderconstruction.html">
-            <div class= menu id= bottom_right>
-                Delete Department Profile
-            </div>
-            </a>
-			<a href= "./pageunderconstruction.html">
-            <div class= menu id= bottom_right>
-                Delete Employee Complaint
-            </div>
-            </a>
+			
+			
+			
         </div>
         
         <div id= copyright>
