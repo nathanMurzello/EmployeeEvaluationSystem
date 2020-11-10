@@ -12,7 +12,7 @@
         <div class= description>
             Please select one of the options to perform administrative functions for an employee.
         </div>
-        
+        <form action="newemployeephp.php" method="post">
         <div class = content>
 		
 		    <a href= "./newemployee.php">
@@ -51,7 +51,7 @@
         </div>
      
     
-    
+    </form>
     <div id= copyright>
       The Techonauts: Bonnie Atelsek - Matthew Kabat - Nathan Murzello - Terrence Gaines
     </div>
