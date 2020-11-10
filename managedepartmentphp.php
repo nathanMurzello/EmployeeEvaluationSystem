@@ -15,7 +15,7 @@
        
         <div class = content>
 		
-		    <a href= "./newemployee.php">
+		    <a href= "./newdepartment.php">
             <div class= menu id= bottom_right>
                 Create Department
             </div>
