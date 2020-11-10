@@ -13,27 +13,33 @@
         <div id= stock> </div>
        
         <div class = content>
+		
+		    <a href= "./createcomplaintphp.php">
+            <div class= menu id= bottom_right>
+                Create Employee Complaint
+            </div>
+            </a>
             <a href= "./pageunderconstruction.html">
             <div class= menu id= top_left>
-                Search Employee
+                Search for Employee
             </div>
             </a>
             
             <a href= "./newevaluation.php">
             <div class= menu id= top_right>
-                Create Evaluation
+                Create Evaluation Profile
             </div>
             </a>
             
-            <a href= "./newemployee.php">
+            <a href= "./pageunderconstruction.html">
             <div class= menu id= bottom_left>
-                Add Employee
+                Manage Employee Profile
             </div>
             </a>
             
-            <a href= "./newdepartment.php">
+            <a href= "./pageunderconstruction.html">
             <div class= menu id= bottom_right>
-                Create Department
+                Manage Department Profile
             </div>
             </a>
 			
@@ -43,11 +49,7 @@
             </div>
             </a>
 			
-			<a href= "./createcomplaintphp.php">
-            <div class= menu id= bottom_right>
-                Add an Employee Complaint
-            </div>
-            </a>
+			
 			<a href= "./pageunderconstruction.html">
             <div class= menu id= bottom_right>
                 Manage Department
