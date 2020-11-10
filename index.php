@@ -19,7 +19,7 @@
                 Create Complaint
             </div>
             </a>
-            <a href= "./pageunderconstruction.html">
+            <a href= "./search.php">
             <div class= menu id= top_left>
                 Search Employee
             </div>
