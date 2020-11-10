@@ -8,11 +8,11 @@
  
        <h1 class=banner>Manage Employee</h1>
      
-    
+        <form action="" method="post">
         <div class= description>
             Please select one of the options to perform administrative functions for an employee.
         </div>
-        <form action="newemployeephp.php" method="post">
+       
         <div class = content>
 		
 		    <a href= "./newemployee.php">
