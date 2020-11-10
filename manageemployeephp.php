@@ -6,11 +6,7 @@
 </head> 
 <body>
  
-       <div class= banner>- MANAGE EMPLOYEE -</div>
-        
-        <div class= wrapper>
-        
-        <div id= stock> </div>
+       <h1 class=banner>Manage Employee</h1>
      
     
         <div class= description>
@@ -59,6 +55,6 @@
     <div id= copyright>
       The Techonauts: Bonnie Atelsek - Matthew Kabat - Nathan Murzello - Terrence Gaines
     </div>
-   </div> 
+   
 </body> 
 </html> 
