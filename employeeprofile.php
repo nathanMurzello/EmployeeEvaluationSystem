@@ -19,12 +19,12 @@
         $cursor = $collection->findOne($criteria);
         
         //if the employee does not exist, redirect to the error page
-        if(!empty($cursor)) {
+        $valid = db.collection.find({_id: '$ID'}, {_id: 1}).limit(1);
+        if ($valid == 0) {
             header("Location: ./employeeDoesNotExist.html"); 
             exit;
         }
         
-        echo("Success!");
         foreach($cursor as $document) {  
             var_dump($document);  
         }
