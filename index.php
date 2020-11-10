@@ -31,7 +31,7 @@
             </div>
             </a>
             
-            <a href= "./pageunderconstruction.html">
+            <a href= "./manageemployeephp.php">
             <div class= menu id= bottom_left>
                 Manage Employee 
             </div>
