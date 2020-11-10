@@ -1,7 +1,7 @@
 <html>
      <!--Frontend/GUI page designed and developed by Bonnie Atelsek and Terrence Gaines--> 
      <head>
-          <title>New Evaluation</title>
+          <title>New Complaint</title>
           <meta charset="utf-8"/>
           <link rel="stylesheet" href="./resources/construction.css">
      </head>
