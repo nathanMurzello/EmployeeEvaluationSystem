@@ -14,7 +14,7 @@
        
         <div class = content>
 		
-		    <a href= "./pageunderconstruction.html">
+		    <a href= "./newcomplaint.php">
             <div class= menu id= bottom_right>
                 Create Complaint
             </div>
