@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Home</title>
+        <title>Techonauts - Employee Evaluation System</title>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="./resources/stylesheet.css">
     </head>
@@ -11,9 +11,9 @@
         <div class= wrapper>
         
         <div id= stock> </div>
-        
+       
         <div class = content>
-            <a href= "./search.php">
+            <a href= "./pageunderconstruction.html">
             <div class= menu id= top_left>
                 Search Employee
             </div>
@@ -37,11 +37,42 @@
             </div>
             </a>
 			
-			<!--<a href= "./pageunderconstruction.html">
+			<a href= "./pageunderconstruction.html">
             <div class= menu id= bottom_right>
                 View Employee Bonus
             </div>
-            </a>-->
+            </a>
+			
+			<a href= "./createcomplaintphp.php">
+            <div class= menu id= bottom_right>
+                Add an Employee Complaint
+            </div>
+            </a>
+			<a href= "./pageunderconstruction.html">
+            <div class= menu id= bottom_right>
+                Edit Employee Profile
+            </div>
+            </a>
+			<a href= "./pageunderconstruction.html">
+            <div class= menu id= bottom_right>
+                Delete Employee Profile
+            </div>
+            </a>
+			<a href= "./pageunderconstruction.html">
+            <div class= menu id= bottom_right>
+                Edit Department Profile
+            </div>
+            </a>
+			<a href= "./pageunderconstruction.html">
+            <div class= menu id= bottom_right>
+                Delete Department Profile
+            </div>
+            </a>
+			<a href= "./pageunderconstruction.html">
+            <div class= menu id= bottom_right>
+                Delete Employee Complaint
+            </div>
+            </a>
         </div>
         
         <div id= copyright>
