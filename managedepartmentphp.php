@@ -10,7 +10,7 @@
      
         <form action="" method="post">
         <div class= description>
-            Please select one of the options to perform administrative functions for an employee.
+            Please select one of the options to perform administrative functions for a department.
         </div>
        
         <div class = content>
