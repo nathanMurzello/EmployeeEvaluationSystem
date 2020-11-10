@@ -13,7 +13,7 @@
 	 page called newemployeephp.php which will process the results of this form and send them to the database
 	 -->
 	 
-     <form action="newevaluationphp.php" method="post">
+     <form action="newcomplaintphp.php" method="post">
 	 
 	 <!--There are special instructions grading criteria if the using is being graded for attending.-->
 	 <!--The attendance criteria takes into consideration if the user has a zero attendance record.-->
@@ -34,11 +34,11 @@
           </tr>
 		  <tr>
                   <td align="left" valign="top" id="Contact"><strong>Reason for Complaint</strong></td>
-                  <td align="left" valign="top"><input type="text" name="value1"/></td>
+                  <td align="left" valign="top"><input type="text" value="value1"/></td>
           </tr>
 		 <tr>
                   <td align="left" valign="top" id="Contact"><strong>Details</strong></td>
-                  <td align="left" valign="top"><input type="text" name="value1"/></td>
+                  <td align="left" valign="top"><input type="text" value="value2"/></td>
           </tr>
 		  <tr>
 		  <td><input name="verify" type="checkbox" required> I certify that all the information entered above is accurate.</td>
