@@ -14,6 +14,7 @@
         $ID = $_POST['ID'];
         
         $employee=$collection->findOne($ID);
+        echo("Searching");
         var_dump($employee); 
         /*find the employee based on their ID
         $criteria = array('_id' => $ID);
