@@ -1,6 +1,6 @@
 <html> 
 <head>
-    <title>Manage Employee</title>
+    <title>Manage Department</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="./resources/newemployee.css">
 </head> 
