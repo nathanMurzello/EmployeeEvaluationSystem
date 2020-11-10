@@ -1,0 +1,50 @@
+<html> 
+<head>
+    <title>Manage Employee</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="./resources/newemployee.css">
+</head> 
+<body>
+ 
+       <h1 class=banner>Manage Department</h1>
+     
+        <form action="" method="post">
+        <div class= description>
+            Please select one of the options to perform administrative functions for an employee.
+        </div>
+       
+        <div class = content>
+		
+		    <a href= "./newemployee.php">
+            <div class= menu id= bottom_right>
+                Create Department
+            </div>
+            </a>
+            <a href= "./pageunderconstruction.html">
+            <div class= menu id= top_left>
+                Edit Department
+            </div>
+            </a>
+            
+            <a href= "./pageunderconstruction.html">
+            <div class= menu id= top_right>
+                Delete Department 
+            </div>
+            </a>
+            
+            
+			
+			
+			
+			
+			
+        </div>
+     
+    
+    </form>
+    <div id= copyright>
+      The Techonauts: Bonnie Atelsek - Matthew Kabat - Nathan Murzello - Terrence Gaines
+    </div>
+   
+</body> 
+</html> 
