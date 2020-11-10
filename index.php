@@ -37,7 +37,7 @@
             </div>
             </a>
             
-            <a href= "./pageunderconstruction.html">
+            <a href= "./managedepartmentphp.php">
             <div class= menu id= bottom_right>
                 Manage Department
             </div>
