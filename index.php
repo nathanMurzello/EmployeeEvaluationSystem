@@ -16,30 +16,30 @@
 		
 		    <a href= "./createcomplaintphp.php">
             <div class= menu id= bottom_right>
-                Create Employee Complaint
+                Create Complaint
             </div>
             </a>
             <a href= "./pageunderconstruction.html">
             <div class= menu id= top_left>
-                Search for Employee
+                Search Employee
             </div>
             </a>
             
             <a href= "./newevaluation.php">
             <div class= menu id= top_right>
-                Create Evaluation Profile
+                Create Evaluation 
             </div>
             </a>
             
             <a href= "./pageunderconstruction.html">
             <div class= menu id= bottom_left>
-                Manage Employee Profile
+                Manage Employee 
             </div>
             </a>
             
             <a href= "./pageunderconstruction.html">
             <div class= menu id= bottom_right>
-                Manage Department Profile
+                Manage Department
             </div>
             </a>
 			
