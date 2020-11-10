@@ -10,9 +10,9 @@
         $client = new MongoDB\Client(
           'mongodb+srv://techno:techno123@cluster0.k9zfj.mongodb.net/EmployeeSystem?retryWrites=true&w=majority');
         $collection=$client->selectCollection('EmployeeSystem','Employee');
-          echo("Displaying correctly");
+  
         $ID = $_POST['ID'];
-        
+        echo("Displaying correctly");      
         $employee=$collection->findOne($ID);
         echo("Searching");
         var_dump($employee); 
