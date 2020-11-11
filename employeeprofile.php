@@ -15,17 +15,29 @@
         //find one employee based on employee ID    
         $employee=$collection->findOne(['_id' =>$ID]);
         
-        //var_dump($employee); 
-        echo $employee["first_name"];
-         
+        //var_dump($employee); (For seeing the BSON object returned by query) 
+
+        echo($employee["first_name"]);
         
+        /*How to display information
+
+        $employee["_id"];                 The employee ID
+        $employee["first_name"];          
+        $employee["last_name"];           
+        $employee["address"];             
+        $employee["city"];
+        $employee["state"]; 
+        $employee["zip_code"];
+        $employee["department"];          The employee department number
+        */
+
         //if the employee does not exist, redirect to the error page
         /*if(!empty($employee)) {
             header("Location: ./employeeDoesNotExist.html"); 
             exit;
         }*/
         
-        echo("Success!");
+        
         
         
         
