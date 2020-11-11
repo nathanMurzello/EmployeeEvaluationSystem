@@ -16,14 +16,14 @@
         $employee=$collection->findOne(['_id' =>$ID]);
         
         //var_dump($employee); 
-        echo $employee[0];
+        echo $employee["first_name"];
          
         
         //if the employee does not exist, redirect to the error page
-        if(!empty($employee)) {
+        /*if(!empty($employee)) {
             header("Location: ./employeeDoesNotExist.html"); 
             exit;
-        }
+        }*/
         
         echo("Success!");
         
