@@ -6,7 +6,7 @@
 </head> 
 <body>
  
-    <h1 class=banner>Please enter the employee ID</h1>
+    <h1 class=banner>Please enter the Department ID</h1>
      
     <form action="newdepartmentphp.php" method="post">
         <div class= description>
