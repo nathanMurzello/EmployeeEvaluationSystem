@@ -11,10 +11,10 @@
           'mongodb+srv://techno:techno123@cluster0.k9zfj.mongodb.net/EmployeeSystem?retryWrites=true&w=majority');
         $collection=$client->selectCollection('EmployeeSystem','Employee');
   
-        $ID = $_POST['ID'];
-        echo("Displaying correctly");      
-        $employee=$collection->findOne(['_id' =>"5678"]);
-        echo("Searching");
+        $ID = (int)$_POST['ID'];
+            
+        $employee=$collection->findOne(['_id' =>$ID]);
+        
         var_dump($employee); 
         /*find the employee based on their ID
         $criteria = array('_id' => $ID);
