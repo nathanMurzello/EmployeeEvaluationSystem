@@ -1,6 +1,6 @@
 <html> 
 <head>
-    <title>New Employee</title>
+    <title>Edit Employee</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="./resources/stylesheet.css">
 </head> 
@@ -10,10 +10,7 @@
      
     <form action="newemployeephp.php" method="post">
         <div class= description>
-            Fill out all provided fields with the new employee's information so that a profile can be added
-            for them. Employee ID numbers must be unique. The department they belong to must already exist
-            in order for the ID to be used to add employees. The zip code provided should correspond to the
-            location the employee has listed as their home address.
+            Edit the specific employee profile that you wish to update.
         </div>
     
         First Name: <input name="first_name" type="text" required>
