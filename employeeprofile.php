@@ -13,19 +13,19 @@
   
         $ID = $_POST['ID'];
         echo("Displaying correctly");      
-        $employee=$collection->findOne(['_id' =>'5678']);
+        $employee=$collection->findOne(['_id' =>"5678"]);
         echo("Searching");
         var_dump($employee); 
         /*find the employee based on their ID
         $criteria = array('_id' => $ID);
         $cursor = $collection->findOne($criteria);
-        */
+        
         //if the employee does not exist, redirect to the error page
         if(!empty($employee)) {
             header("Location: ./employeeDoesNotExist.html"); 
             exit;
         }
-        
+        */
         echo("Success!");
         
         
