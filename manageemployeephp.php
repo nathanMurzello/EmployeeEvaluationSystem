@@ -13,8 +13,6 @@
             Please select one of the options to perform administrative functions for an employee.
         </div>
        
-        
-        <div id= stock> </div>
         <div class = content>
 		
 		    <a href= "./newemployee.php">
