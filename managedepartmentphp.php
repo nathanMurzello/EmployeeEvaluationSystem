@@ -2,7 +2,7 @@
 <head>
     <title>Manage Department</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="./resources/newemployee.css">
+    <link rel="stylesheet" href="./resources/stylesheet.css">
 </head> 
 <body>
  
@@ -20,13 +20,13 @@
                 Create Department
             </div>
             </a>
-            <a href= "./pageunderconstruction.html">
+            <a href= "./editdepartment.php">
             <div class= menu id= top_left>
                 Edit Department
             </div>
             </a>
             
-            <a href= "./pageunderconstruction.html">
+            <a href= "./deletedepartment.php">
             <div class= menu id= top_right>
                 Delete Department 
             </div>
