@@ -25,7 +25,7 @@
         <input type="submit" value="Edit Department" name="form_result"> 
         <input type="reset">
     </form>
-    <a href= "./index.php"> Return back to main screen </a>
+    <a href= "./managedepartmentphp.php"> Return back to main screen </a>
     <div id= copyright>
       The Techonauts: Bonnie Atelsek - Matthew Kabat - Nathan Murzello - Terrence Gaines
     </div>
