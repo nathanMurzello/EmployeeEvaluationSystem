@@ -31,6 +31,7 @@
                 Delete Department 
             </div>
             </a>
+			<a href= "./index.php"> Return back to main screen </a>
             
             
 			
