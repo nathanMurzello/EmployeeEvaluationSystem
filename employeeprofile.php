@@ -12,20 +12,19 @@
         $collection=$client->selectCollection('EmployeeSystem','Employee');
   
         $ID = (int)$_POST['ID'];
-            
+        //find one employee based on employee ID    
         $employee=$collection->findOne(['_id' =>$ID]);
         
-        var_dump($employee); 
-        /*find the employee based on their ID
-        $criteria = array('_id' => $ID);
-        $cursor = $collection->findOne($criteria);
+        //var_dump($employee); 
+        echo $employee[0];
+         
         
         //if the employee does not exist, redirect to the error page
         if(!empty($employee)) {
             header("Location: ./employeeDoesNotExist.html"); 
             exit;
         }
-        */
+        
         echo("Success!");
         
         
