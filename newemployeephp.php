@@ -71,7 +71,7 @@
 
     //if all fields have been approved, the data will be inserted into the database to create a new employee
     if ($approved == 5) {
-      $num_id=$_POST['id'];
+      $num_id=(int)$_POST['id'];
       $num_zip=(int)$_POST['zip_code'];
       $num_dep=(int)$_POST['department'];
       $insert=array(
