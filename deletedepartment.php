@@ -1,6 +1,6 @@
 <html> 
 <head>
-    <title>Edit Department</title>
+    <title>Delete Department</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="./resources/stylesheet.css">
 </head> 
@@ -23,7 +23,7 @@
         <input type="submit" value="Edit Department" name="form_result"> 
         <input type="reset">
     </form>
-    
+    <a href= "./managedepartmentphp.php"> Return back to main screen </a>
     <div id= copyright>
       The Techonauts: Bonnie Atelsek - Matthew Kabat - Nathan Murzello - Terrence Gaines
     </div>
