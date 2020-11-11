@@ -13,7 +13,7 @@
   
         $ID = $_POST['ID'];
         echo("Displaying correctly");      
-        $employee=$collection->findOne($ID);
+        $employee=$collection->findOne(['_id' =>$ID]);
         echo("Searching");
         var_dump($employee); 
         /*find the employee based on their ID
