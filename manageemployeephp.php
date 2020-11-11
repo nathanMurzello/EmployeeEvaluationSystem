@@ -12,7 +12,7 @@
         <div class= description>
             Please select one of the options to perform administrative functions for an employee.
         </div>
-       <div class= wrapper>
+       
         
         <div id= stock> </div>
         <div class = content>
