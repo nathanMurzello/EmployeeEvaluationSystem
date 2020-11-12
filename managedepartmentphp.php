@@ -20,13 +20,13 @@
                 Create Department
             </div>
             </a>
-            <a href= "./editdepartment.php">
+            <a href= "./esecure.php">
             <div class= menu id= top_left>
                 Edit Department
             </div>
             </a>
             
-            <a href= "./secure.php">
+            <a href= "./dsecure.php">
             <div class= menu id= top_right>
                 Delete Department 
             </div>
