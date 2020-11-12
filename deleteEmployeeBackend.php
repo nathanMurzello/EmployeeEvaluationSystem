@@ -33,7 +33,7 @@
       echo "Error: An Employee ID can only contain numbers.<br>";
     }
 
-    //if all fields have been approved, the data will be inserted into the database to create a new employee
+    //if all fields have been approved, the data will be delted from the database 
     if ($approved == 1) {
       $num_empID=(int)$empID;
       $delete= $collection->deleteOne(['_id' => $num_empID]);

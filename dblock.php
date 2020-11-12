@@ -5,11 +5,6 @@
     <link rel="stylesheet" href="./resources/stylesheet.css">
 </head> 
 <body>
- 
-       
-     
-        
-        
        
 <?php
 $pass = $_POST['pass'];

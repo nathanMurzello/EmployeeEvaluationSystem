@@ -8,18 +8,18 @@
  
     <h1 class=banner>Edit Employee</h1>
      
-    <form action="newemployeephp.php" method="post">
+    <form action="editEmployeeBackend.php" method="post">
         <div class= description>
             Edit the specific employee profile that you wish to update.
         </div>
     
+        Employee ID Number: <input name="id" type="password" required>
+        <br>
+
         First Name: <input name="first_name" type="text" required>
         <br>
         
         Last Name: <input name="last_name" type="text" required> 
-        <br>
-        
-        Employee ID Number: <input name="id" type="password" required>
         <br>
         
         Employment State: 
