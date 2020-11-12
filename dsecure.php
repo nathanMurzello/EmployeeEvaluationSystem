@@ -23,7 +23,7 @@ else
     if(isset($_POST))
     {?>
 
-            <form method="POST" action="secure.php">
+            <form method="POST" action="dsecure.php">
             <div class= description>
             This is a restricted page.  Please enter your password.
             </div>
