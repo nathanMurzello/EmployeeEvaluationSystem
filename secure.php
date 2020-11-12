@@ -1,12 +1,12 @@
 <html> 
 <head>
-    <title>Manage Department</title>
+    <title>App Security</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="./resources/stylesheet.css">
 </head> 
 <body>
  
-       <h1 class=banner>Manage Department</h1>
+       <h1 class=banner>App Security</h1>
      
         
         <div class= description>
