@@ -6,12 +6,10 @@
 </head> 
 <body>
  
-       <h1 class=banner>App Security</h1>
+       
      
         
-        <div class= description>
-            This is a restricted page.  Please enter your password.
-        </div>
+        
        
 <?php
 $pass = $_POST['pass'];
@@ -26,7 +24,9 @@ else
     {?>
 
             <form method="POST" action="secure.php">
-            
+            <div class= description>
+            This is a restricted page.  Please enter your password.
+            </div>
             Enter Password <input type="password" name="pass"></input><br/>
             <input type="submit" name="Delete Department" value="Go"></input>
             </form>
