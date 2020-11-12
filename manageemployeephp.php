@@ -20,13 +20,13 @@
                 Create Employee
             </div>
             </a>
-            <a href= "./editemployee.php">
+            <a href= "./eblock.php">
             <div class= menu id= top_left>
                 Edit Employee
             </div>
             </a>
             
-            <a href= "./deleteemployee.php">
+            <a href= "./dblock.php">
             <div class= menu id= top_right>
                 Delete Employee 
             </div>
