@@ -34,11 +34,11 @@
           </tr>
 		  <tr>
                   <td align="left" valign="top" id="Contact"><strong>Reason for Complaint</strong></td>
-                  <td align="left" valign="top"><input type="text" name="value1"/></td>
+                  <td align="left" valign="top"><input type="text" name="Reason"/></td>
           </tr>
 		 <tr>
                   <td align="left" valign="top" id="Contact"><strong>Details</strong></td>
-                  <td align="left" valign="top"><input type="text" name="value2"/></td>
+                  <td align="left" valign="top"><input type="text" name="Details"/></td>
           </tr>
 		  <tr>
 		  <td><input name="verify" type="checkbox" required> I certify that all the information entered above is accurate.</td>

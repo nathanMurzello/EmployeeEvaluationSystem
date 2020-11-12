@@ -11,16 +11,16 @@
 	     require 'vendor/autoload.php';
          $client = new MongoDB\Client(
          'mongodb+srv://techno:techno123@cluster0.k9zfj.mongodb.net/EmployeeSystem?retryWrites=true&w=majority');
-         $collection=$client->selectCollection('EmployeeSystem','Evaluation');
+         $collection=$client->selectCollection('EmployeeSystem','Complaint');
 	
          
          $approved = 0;
 		 
          ##this section passes the values enter by the user to the database
 	     $complaint_id = $_POST['complaint_id'];
-         $emp_id = $_POST['emp_id'];
-         $value1 = $_POST['value1'];
-	     $value2 = $_POST['value2'];
+          $emp_id = $_POST['emp_id'];
+          $Reason = $_POST['Reason'];
+	     $Details = $_POST['Details'];
 	     
 		 
 		 ##this section check if the user input the correct data type.  
@@ -30,14 +30,14 @@
       	      $approved++;
    	          }
 	     else {
-	          echo "\nError: A employee id can only contain numbers.<br>";
+	          echo "\nError: A complaint id can only contain numbers.<br>";
 	          }
     
 	    if (is_numeric($emp_id)) {
 	         $approved++;
 	         }
 	    else {
-	         echo "\nError: An evaluation ID can only contain numbers.<br>";
+	         echo "\nError: An Employee ID can only contain numbers.<br>";
 	         }
 			 
 	   
@@ -45,14 +45,14 @@
 	    if ($approved == 2) {
              echo "Complaint successfully added.";
 	        
-             $num_complaint_id=(int)$_POST['complaint_id'];
-             $num_emp_id=(int)$_POST['emp_id'];
-             $num_score=(double)$score;
+             $num_complaint_id=(int)$complaint_id;
+             $num_emp_id=(int)$emp_id;
+             
              $insert=array(
              '_id'=>$num_complaint_id,
              'emp_id'=>$num_emp_id,
-             'value1'=>$num_value1,
-			 'value2'=>$num_value2,
+             'Reason'=>$Reason,
+		   'Details'=>$Details,
              );
 
         $collection->insertOne($insert);

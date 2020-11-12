@@ -8,7 +8,7 @@
  
     <h1 class=banner>Delete Employee</h1>
      
-    <form action="newemployeephp.php" method="post">
+    <form action="deleteEmployeeBackend.php" method="post">
         <div class= description>
             Enter the Employee ID to display the record that you would like to delete.
         </div>
