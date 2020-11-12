@@ -22,8 +22,8 @@
     $first = $_POST['first_name'];
     $last = $_POST['last_name'];
     $id = $_POST['id'];
-    $city = $_POST['city'];
-    $address = $_POST['address'];
+    //$city = $_POST['city'];
+    //$address = $_POST['address'];
     $state = $_POST['state'];
     $dept = $_POST['department'];
     
@@ -48,12 +48,12 @@
       echo "Error: A name can only contain letters.<br>";
     }
     
-    if (is_string($city) && preg_match($num_pattern, $city) == 0) {
+    /*if (is_string($city) && preg_match($num_pattern, $city) == 0) {
       $approved++;
     }
     else {
       echo "Error: A city can only contain letters.<br>";
-    }
+    }*/
     
     if (is_numeric($dept)) {
       $approved++;
@@ -70,7 +70,7 @@
     }
 
     //if all fields have been approved, the employee will be updated in the database 
-    if ($approved == 5) {
+    if ($approved == 4) {
       $num_id=(int)$_POST['id'];
       $num_zip=(int)$_POST['zip_code'];
       $num_dep=(int)$_POST['department'];
@@ -81,8 +81,8 @@
             '$set'=>[
                 'first_name'=>$_POST['first_name'],
                 'last_name'=>$_POST['last_name'],
-                'address'=>$_POST['address'],
-                'city'=>$_POST['city'],
+                //'address'=>$_POST['address'],
+                //'city'=>$_POST['city'],
                 'state'=>$_POST['state'],
                 'zip_code'=>$num_zip,
                 'department'=>$num_dep,
