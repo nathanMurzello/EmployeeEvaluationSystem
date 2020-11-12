@@ -28,7 +28,7 @@ else
             This is a restricted page.  Please enter your password.
             </div>
             Enter Password <input type="password" name="pass"></input><br/>
-            <input type="submit" name="Delete Department" value="Delete Department"></input>
+            <input type="submit" name="Delete Employee" value="Delete Employee"></input>
             </form>
     <?}
 }
