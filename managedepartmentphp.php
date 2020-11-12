@@ -26,7 +26,7 @@
             </div>
             </a>
             
-            <a href= "./deletedepartment.php">
+            <a href= "./secure.php">
             <div class= menu id= top_right>
                 Delete Department 
             </div>
