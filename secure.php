@@ -10,7 +10,7 @@
      
         
         <div class= description>
-            Please select one of the options to perform administrative functions for a department.
+            This is a restricted page.  Please enter your password.
         </div>
        
 <?php
@@ -27,8 +27,8 @@ else
 
             <form method="POST" action="secure.php">
             
-            Pass <input type="password" name="pass"></input><br/>
-            <input type="submit" name="submit" value="Go"></input>
+            Enter Password <input type="password" name="pass"></input><br/>
+            <input type="submit" name="Delete Department" value="Go"></input>
             </form>
     <?}
 }
