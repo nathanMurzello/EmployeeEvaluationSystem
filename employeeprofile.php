@@ -45,7 +45,7 @@
         }*/
         
         //iterate through evals and calculate average
-        $num=0;
+        /*$num=0;
         $avg=0;
         foreach ($evals as $cur) {
             $avg += (double)$cur["eval_score"];
@@ -53,7 +53,7 @@
         }
         $bonus = ($avg / $num);
         
-        echo("Percent Bonus: " + $bonus + "%");
+        echo("Percent Bonus: " + $bonus + "%");*/
         
         
     ?>
