@@ -12,6 +12,7 @@
           'mongodb+srv://techno:techno123@cluster0.k9zfj.mongodb.net/EmployeeSystem?retryWrites=true&w=majority');
         $collection=$client->selectCollection('EmployeeSystem','Employee');
         //$ecollection=$client->selectCollection('EmployeeSystem','Evaluation');
+        
         //initialize variable with ID value
         $ID = (int)$_POST['ID'];
         
@@ -20,10 +21,10 @@
         //$evals=$ecollection->find(['employee id' =>$ID]);
 
         //if the employee does not exist, redirect to the error page
-        if(empty($employee)) {
+        /*if(empty($employee)) {
             header("Location: ./employeeDoesNotExist.html"); 
             exit;
-        }
+        }*/
         
         //var_dump($employee); (For seeing the BSON object returned by query) 
         
@@ -48,10 +49,10 @@
         /*$num=0;
         $avg=0;
         foreach ($evals as $cur) {
-            $avg += $cur["eval_score"];
+            $avg += (double)$cur["eval_score"];
             $num++;
         }
-        $bonus = ((double)$avg / $num);
+        $bonus = ($avg / $num);
         
         echo("Percent Bonus: " + $bonus + "%");*/
         
