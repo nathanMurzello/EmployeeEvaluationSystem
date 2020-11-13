@@ -1,7 +1,7 @@
 <html>
 
   <head>
-    <title>New Employee</title>
+    <title>Edit Employee</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="./resources/construction.css">
   </head>
@@ -22,8 +22,8 @@
     $first = $_POST['first_name'];
     $last = $_POST['last_name'];
     $id = $_POST['id'];
-    $city = $_POST['city'];
-    $address = $_POST['address'];
+    //$city = $_POST['city'];
+    //$address = $_POST['address'];
     $state = $_POST['state'];
     $dept = $_POST['department'];
     
@@ -48,12 +48,12 @@
       echo "Error: A name can only contain letters.<br>";
     }
     
-    if (is_string($city) && preg_match($num_pattern, $city) == 0) {
+    /*if (is_string($city) && preg_match($num_pattern, $city) == 0) {
       $approved++;
     }
     else {
       echo "Error: A city can only contain letters.<br>";
-    }
+    }*/
     
     if (is_numeric($dept)) {
       $approved++;
@@ -69,32 +69,35 @@
       echo "Error: An employee ID can only contain numbers.<br>";
     }
 
-    //if all fields have been approved, the data will be inserted into the database to create a new employee
-    if ($approved == 5) {
+    //if all fields have been approved, the employee will be updated in the database 
+    if ($approved == 4) {
       $num_id=(int)$_POST['id'];
       $num_zip=(int)$_POST['zip_code'];
       $num_dep=(int)$_POST['department'];
-      $insert=array(
-          '_id'=>$num_id,
-          'first_name'=>$_POST['first_name'],
-          'last_name'=>$_POST['last_name'],
-          'address'=>$_POST['address'],
-          'city'=>$_POST['city'],
-          'state'=>$_POST['state'],
-          'zip_code'=>$num_zip,
-          'department'=>$num_dep,
-      );
       
-      $collection->insertOne($insert);
+      $collection->updateOne(
+          ['_id'=>$num_id],
+          [
+            '$set'=>[
+                'first_name'=>$_POST['first_name'],
+                'last_name'=>$_POST['last_name'],
+                //'address'=>$_POST['address'],
+                //'city'=>$_POST['city'],
+                'state'=>$_POST['state'],
+                'zip_code'=>$num_zip,
+                'department'=>$num_dep,
+            ]
+          ]
+      );
     }
     else {
-      echo "Operation unsuccessful: Employee was not added, please try again.";
+      echo "Operation unsuccessful: Employee was not edited, please try again.";
     }
     ?>
 
     <!--Displays the back bar and the copyright bar at the bottom-->
     <div class = banner>
-      <a href= "./index.php"> Back </a>
+      <a href= "./manageemployeephp.php"> Back </a>
     </div>
         
     <div id= copyright>

@@ -1,23 +1,21 @@
 <html> 
 <head>
-    <title>Edit Department</title>
+    <title>Delete Department</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="./resources/stylesheet.css">
 </head> 
 <body>
  
-    <h1 class=banner>Edit the Department</h1>
+    <h1 class=banner>Delete the Department</h1>
      
-    <form action="editDepartmentBackend.php" method="post">
+    <form action="deleteDepartmentBackend.php" method="post">
         <div class= description>
-            Enter the Department ID number you wish to search in order to display their profile.
+            Enter the Department ID number you wish to search in order to display the department that you need to delete.
         </div>
     
         Department ID Number: <input name="dept_id" type="text" required>
         <br>
-		Department Name: <input name="name" type="text" required>
-        <br>       
-        Department Location: <input name="location" type="text" required>
+		
         <br>
         <br>
         

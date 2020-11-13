@@ -8,6 +8,11 @@
  
        <h1 class=banner>Manage Employee</h1>
        
+        <form action="" method="post">
+        <div class= description>
+            Please select one of the options to perform administrative functions for an employee.
+        </div>
+       
         <div class = content>
 		
 		    <a href= "./newemployee.php">
@@ -15,13 +20,13 @@
                 Create Employee
             </div>
             </a>
-            <a href= "./pageunderconstruction.html">
+            <a href= "./eblock.php">
             <div class= menu id= top_left>
                 Edit Employee
             </div>
             </a>
             
-            <a href= "./pageunderconstruction.html">
+            <a href= "./dblock.php">
             <div class= menu id= top_right>
                 Delete Employee 
             </div>
@@ -32,12 +37,20 @@
                 View Evaluations 
             </div>
             </a>
+            
+            
+			<a href= "./index.php"> Return back to main screen </a>
+			
+			
+			
 			
         </div>
-
+     </div>
+    
+    </form>
     <div id= copyright>
       The Techonauts: Bonnie Atelsek - Matthew Kabat - Nathan Murzello - Terrence Gaines
     </div>
    
 </body> 
-</html> 
+</html>

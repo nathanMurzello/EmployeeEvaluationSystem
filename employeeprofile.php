@@ -11,35 +11,34 @@
           'mongodb+srv://techno:techno123@cluster0.k9zfj.mongodb.net/EmployeeSystem?retryWrites=true&w=majority');
         $collection=$client->selectCollection('EmployeeSystem','Employee');
   
-        $ID = $_POST['ID'];
-        echo("Displaying correctly");      
-        $employee=$collection->findOne(['_id' =>'5678']);
-        echo("Searching");
-        var_dump($employee); 
-        /*find the employee based on their ID
-        $criteria = array('_id' => $ID);
-        $cursor = $collection->findOne($criteria);
+        $ID = (int)$_POST['ID'];
+        //find one employee based on employee ID    
+        $employee=$collection->findOne(['_id' =>$ID]);
+        
+        //var_dump($employee); (For seeing the BSON object returned by query) 
+
+        echo($employee["first_name"]);
+        
+        /*How to display information
+        $employee["_id"];                 The employee ID
+        $employee["first_name"];          
+        $employee["last_name"];           
+        $employee["address"];             
+        $employee["city"];
+        $employee["state"]; 
+        $employee["zip_code"];
+        $employee["department"];          The employee department number
         */
+
         //if the employee does not exist, redirect to the error page
-<<<<<<< HEAD
-        $valid = db.collection.find({_id: '$ID'}, {_id: 1}).limit(1);
-        if ($valid == 0) {
-=======
-        if(!empty($employee)) {
->>>>>>> 72cf36264aea602253e5aca13e796fbda60599ad
+        /*if(!empty($employee)) {
             header("Location: ./employeeDoesNotExist.html"); 
             exit;
-        }
-        
-<<<<<<< HEAD
-        foreach($cursor as $document) {  
-            var_dump($document);  
-        }
-=======
-        echo("Success!");
+        }*/
         
         
->>>>>>> 72cf36264aea602253e5aca13e796fbda60599ad
+        
+        
         
     ?>
     <h1 class=banner> Employee Profile</h1>
