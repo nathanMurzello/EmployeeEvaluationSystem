@@ -11,13 +11,13 @@
         $client = new MongoDB\Client(
           'mongodb+srv://techno:techno123@cluster0.k9zfj.mongodb.net/EmployeeSystem?retryWrites=true&w=majority');
         $collection=$client->selectCollection('EmployeeSystem','Employee');
-        $ecollection=$client->selectCollection('EmployeeSystem','Evaluation');
+        //$ecollection=$client->selectCollection('EmployeeSystem','Evaluation');
         //initialize variable with ID value
         $ID = (int)$_POST['ID'];
         
         //find one employee and their evals based on employee ID    
         $employee=$collection->findOne(['_id' =>$ID]);
-        $evals=$ecollection->find(['employee id' =>$ID]);
+        //$evals=$ecollection->find(['employee id' =>$ID]);
 
         //if the employee does not exist, redirect to the error page
         if(empty($employee)) {
@@ -45,7 +45,7 @@
         echo("Department: " + $employee["department"]);
 
         //iterate through evals and calculate average
-        $num=0;
+        /*$num=0;
         $avg=0;
         foreach ($evals as $cur) {
             $avg += $cur["eval_score"];
@@ -53,7 +53,7 @@
         }
         $bonus = ((double)$avg / $num);
         
-        echo("Percent Bonus: " + $bonus + "%");
+        echo("Percent Bonus: " + $bonus + "%");*/
         
     ?>
     <h1 class=banner> Employee Profile</h1>
