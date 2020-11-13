@@ -18,7 +18,7 @@
         <br>
         
         <br> 
-        <input type="submit" value="Search Employee" name="form_result"> 
+        <input type="submit" value="Find Employee" name="form_result"> 
     </form>
     
     <div id= copyright>
