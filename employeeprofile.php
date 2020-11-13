@@ -20,7 +20,7 @@
         
         //var_dump($employee); (For seeing the BSON object returned by query) 
 
-        echo($employee["first_name"] + $employee["last_name"]);
+        echo($employee["first_name"]);
         
         /*How to display information
         $employee["_id"];                 The employee ID
