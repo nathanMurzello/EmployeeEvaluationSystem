@@ -2,7 +2,7 @@
 <head>
     <title>Employee Profile</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="./resources/newemployee.css">
+    <link rel="stylesheet" href="./resources/profile.css">
 </head> 
 <body>
     <h1 class=banner> Employee Profile</h1>
