@@ -8,7 +8,7 @@
  
     <h1 class=banner>Delete the Department</h1>
      
-    <form action="newdepartmentphp.php" method="post">
+    <form action="deleteDepartmentBackend.php" method="post">
         <div class= description>
             Enter the Department ID number you wish to search in order to display the department that you need to delete.
         </div>

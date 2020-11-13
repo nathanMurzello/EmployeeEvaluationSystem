@@ -8,7 +8,7 @@
  
     <h1 class=banner>Edit the Department</h1>
      
-    <form action="newdepartmentphp.php" method="post">
+    <form action="editDepartmentBackend.php" method="post">
         <div class= description>
             Enter the Department ID number you wish to search in order to display their profile.
         </div>
