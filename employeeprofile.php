@@ -44,10 +44,10 @@
             }
             
             //print out employee info
-            echo($employee["first_name"] . " " . $employee["last_name"] + "<br>");
-            echo("ID Number : " . $employee["_id"] + "<br>");
-            echo($employee["address"] . ", " + $employee["city"] . " " . $employee["state"] . ", " . $employee["zip_code"] + "<br>");
-            echo("Department: " . $employee["department"]+ "<br>");
+            echo($employee["first_name"] . " " . $employee["last_name"] . "<br>");
+            echo("ID Number : " . $employee["_id"] . "<br>");
+            echo($employee["address"] . ", " + $employee["city"] . " " . $employee["state"] . ", " . $employee["zip_code"] . "<br>");
+            echo("Department: " . $employee["department"] . "<br>");
             
             //iterate through evals and calculate average
             $num=0;
