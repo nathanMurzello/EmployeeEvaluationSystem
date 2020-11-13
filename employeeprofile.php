@@ -17,7 +17,7 @@
         
         //find one employee based on employee ID    
         $employee=$collection->findOne(['_id' =>$ID]);
-        $ecollection=$client->selectCollection('EmployeeSystem','Evaluation');
+        //$ecollection=$client->selectCollection('EmployeeSystem','Evaluation');
         
         //var_dump($employee); (For seeing the BSON object returned by query) 
         
