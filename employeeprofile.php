@@ -34,10 +34,10 @@
         */
 
         //if the employee does not exist, redirect to the error page
-        if(!empty($employee)) {
+        /*if(!empty($employee)) {
             header("Location: ./employeeDoesNotExist.html"); 
             exit;
-        }
+        }*/
         
         
         
