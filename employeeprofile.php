@@ -12,15 +12,13 @@
           'mongodb+srv://techno:techno123@cluster0.k9zfj.mongodb.net/EmployeeSystem?retryWrites=true&w=majority');
         $collection=$client->selectCollection('EmployeeSystem','Employee');
   
-        //initialize variable with ID value
         $ID = (int)$_POST['ID'];
-        
         //find one employee based on employee ID    
         $employee=$collection->findOne(['_id' =>$ID]);
         
         //var_dump($employee); (For seeing the BSON object returned by query) 
 
-        echo($employee["first_name"]);
+        echo($employee["first_name"] . $employee["last_name"]);
         
         /*How to display information
         $employee["_id"];                 The employee ID
