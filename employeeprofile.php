@@ -11,14 +11,17 @@
         $client = new MongoDB\Client(
           'mongodb+srv://techno:techno123@cluster0.k9zfj.mongodb.net/EmployeeSystem?retryWrites=true&w=majority');
         $collection=$client->selectCollection('EmployeeSystem','Employee');
+        $ecollection=$client->selectCollection('EmployeeSystem','Evaluation');
   
+        //get ID from form
         $ID = (int)$_POST['ID'];
-        //find one employee based on employee ID    
+        
+        //find one employee and all their evals based on employee ID    
         $employee=$collection->findOne(['_id' =>$ID]);
+        $evals=$ecollection->find(['employee id' =>$ID]);
         
         //var_dump($employee); (For seeing the BSON object returned by query) 
 
-        echo($employee["first_name"] . $employee["last_name"]);
         
         /*How to display information
         $employee["_id"];                 The employee ID
@@ -30,14 +33,29 @@
         $employee["zip_code"];
         $employee["department"];          The employee department number
         */
-
+        
         //if the employee does not exist, redirect to the error page
-        /*if(!empty($employee)) {
+        if(empty($employee)) {
             header("Location: ./employeeDoesNotExist.html"); 
             exit;
-        }*/
+        }
         
+        //print out employee info
+        echo($employee["first_name"] . " " . $employee["last_name"]);
+        echo("ID Number : " . $employee["_id"]);
+        echo($employee["address"] . ", " + $employee["city"] . " " . $employee["state"] . ", " . $employee["zip_code"]);
+        echo("Department: " . $employee["department"]);
         
+        //iterate through evals and calculate average
+        $num=0;
+        $avg=0;
+        foreach ($evals as $cur) {
+            $avg += (double)$cur["eval_score"];
+            $num++;
+        }
+        $bonus = ($avg / $num);
+        
+        echo("Percent Bonus: " + $bonus + "%");
         
         
         
