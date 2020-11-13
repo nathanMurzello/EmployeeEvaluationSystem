@@ -34,9 +34,7 @@
         
         //print out employee info
         echo($employee["first_name"] + " " + $employee["last_name"]);
-        echo("ID Number : " + $employee["_id"]);
-        echo($employee["address"] + ", " + $employee["city"] + " " + $employee["state"] + ", " + $employee["zip_code"]);
-        echo("Department: " + $employee["department"]);
+        
 
         //if the employee does not exist, redirect to the error page
         /*if(!empty($employee)) {
