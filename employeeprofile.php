@@ -2,12 +2,12 @@
 <head>
     <title>Employee Profile</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="./resources/profile.css">
+    <link rel="stylesheet" href="./resources/newemployee.css">
 </head> 
 <body>
     <h1 class=banner> Employee Profile</h1>
      
-    <div id=display>
+    <form>
         <?php
             //Script to establish a connection with the database.
             require 'vendor/autoload.php';
@@ -47,7 +47,7 @@
             echo($employee["first_name"] . " " . $employee["last_name"] . "<br>");
             echo("ID Number : " . $employee["_id"] . "<br>");
             echo($employee["address"]);
-            echo (", " + $employee["city"] . " " . $employee["state"] . ", " . $employee["zip_code"] . "<br>");
+            echo (", " . $employee["city"] . " " . $employee["state"] . ", " . $employee["zip_code"] . "<br>");
             echo("Department: " . $employee["department"] . "<br>");
             
             //iterate through evals and calculate average
@@ -61,7 +61,7 @@
             echo("Percent Bonus: " . $bonus . "%");
         ?>
         
-    </div>
+    </form>
     
     <div class = banner>
       <a href= "./index.php"> Back </a>
