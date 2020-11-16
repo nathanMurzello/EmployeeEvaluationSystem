@@ -2,12 +2,12 @@
 <head>
     <title>Employee Profile</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="./resources/newemployee.css">
+    <link rel="stylesheet" href="./resources/profile.css">
 </head> 
 <body>
     <h1 class=banner> Employee Profile</h1>
      
-    <form>
+    <div class=display>
         <?php
             //Script to establish a connection with the database.
             require 'vendor/autoload.php';
@@ -61,7 +61,7 @@
             echo("Percent Bonus: " . $bonus . "%");
         ?>
         
-    </form>
+    </div>
     
     <div class = back>
       <a href= "./managemeployeephp.php"> Manage Employee </a>
