@@ -58,7 +58,7 @@
                 $num++;
             }
             $bonus = ($avg / $num);
-            echo("Percent Bonus: " . $bonus . "%");
+            echo("<b>Percent Bonus: " . $bonus . "%</b>");
         ?>
         
     </div>
