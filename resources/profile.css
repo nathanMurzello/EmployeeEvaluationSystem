@@ -19,15 +19,26 @@ body {
     font-weight: bold;
 }
 
-display {
+.display {
     background-color: #91b6ea;
     text-align: left;
-    font-size: 10pt;
+    font-size: 20pt;
     margin: auto;
     margin-top: 2%;
-    height: 70%;
+    height: 50%;
     width: 80%;
     padding: 5px;
+}
+
+.back {
+    margin: auto;
+    margin-top: 2%;
+    height: 60px;
+    width: 80%;
+    background-color: #a7e4e4;
+    padding-top: 10px;
+    font-weight: bold;
+    text-align: center;
 }
 
 #dept.banner {

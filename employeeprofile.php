@@ -63,7 +63,11 @@
         
     </form>
     
-    <div class = banner>
+    <div class = back>
+      <a href= "./managemeployeephp.php"> Manage Employee </a>
+    </div>
+    
+    <div class = back>
       <a href= "./index.php"> Back </a>
     </div>
     
