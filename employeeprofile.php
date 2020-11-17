@@ -64,7 +64,7 @@
     </div>
     
     <div class = back>
-      <a href= "./manageeployeephp.php"> Manage Employee </a>
+      <a href= "./manageemployeephp.php"> Manage Employee </a>
     </div>
     
     <div class = back>
