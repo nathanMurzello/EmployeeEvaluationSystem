@@ -32,11 +32,11 @@
             </div>
             </a>
             
-            <a href= "./pageunderconstruction.html">
+<!--            <a href= "./pageunderconstruction.html">
             <div class= menu id= bottom_left>
                 View Evaluations 
             </div>
-            </a>
+            </a>-->
             
             
 			<a href= "./index.php"> Return back to main screen </a>
@@ -45,7 +45,6 @@
 			
 			
         </div>
-     </div>
     
     </form>
     <div id= copyright>

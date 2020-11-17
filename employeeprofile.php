@@ -45,7 +45,7 @@
             
             //print out employee info
             echo($employee["first_name"] . " " . $employee["last_name"] . "<br>");
-            echo("ID Number : " . $employee["_id"] . "<br>");
+            echo("ID Number: " . $employee["_id"] . "<br>");
             echo($employee["address"]);
             echo (", " . $employee["city"] . " " . $employee["state"] . ", " . $employee["zip_code"] . "<br>");
             echo("Department: " . $employee["department"] . "<br>");
@@ -64,7 +64,7 @@
     </div>
     
     <div class = back>
-      <a href= "./managemeployeephp.php"> Manage Employee </a>
+      <a href= "./manageeployeephp.php"> Manage Employee </a>
     </div>
     
     <div class = back>
